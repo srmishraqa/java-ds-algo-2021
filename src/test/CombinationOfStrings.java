@@ -4,6 +4,7 @@ public class CombinationOfStrings {
     public static void main(String[] args) {
         String str = "maim";
         printAllSubStrings(str);
+        System.out.println("Passed");
     }
 
     public static void printAllSubStrings(String str){
