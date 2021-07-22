@@ -31,7 +31,7 @@ public class Introduction {
         // After Java 8 - we don't need to define that non-static method , again create object and then call that method
         // We can do all the above 3 things in lambda expression
 
-        /**
+        /*
          * The lambda expression assigned to an object of BiConsumer type is used to define its accept()
          * which eventually applies the given operation on its arguments.
          * BiConsumers are useful when it is not required to return any value
@@ -42,7 +42,7 @@ public class Introduction {
         BiConsumer<Integer, Integer> biConsumer = ( a,  b) -> System.out.println(a + b);
         biConsumer.accept(10,5);
 
-        /**
+        /*
          * BiConsumer is a functional Interface
          * Lambda expression is referenced by Functional Interfaces
          */
