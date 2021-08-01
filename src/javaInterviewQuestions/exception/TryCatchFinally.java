@@ -10,7 +10,7 @@ public class TryCatchFinally {
     public static void main(String args[]) {
         // main try-block
         try {
-            gi
+
             // try-block2
             try {
 
