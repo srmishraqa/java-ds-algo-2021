@@ -8,13 +8,11 @@ public class NearestPrimeNo {
         for (int i = 2; i < a / 2; i++) {
             if (a % i == 0) {
                 c = 1;
+                break;
             }
         }
 
-        if (c == 1)
-            return false;
-        else
-            return true;
+        return c != 1;
 
 
     }
@@ -41,11 +39,11 @@ public class NearestPrimeNo {
             }
         }
         if (d > d1)
-            System.out.println("closest prime no.: " + n1);
+            System.out.println("closest prime of " +a+" : " + n1);
         else if (d1 > d)
-            System.out.println("closest prime no.: " + n);
+            System.out.println("closest prime of " +a+" : " + n);
         else
-            System.out.println("closest prime no.: " + n + " " + n1);
+            System.out.println("closest prime no of " +a+" : " + n1 + " & " + n);
     }
 
 }

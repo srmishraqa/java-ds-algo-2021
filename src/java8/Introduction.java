@@ -3,7 +3,7 @@ package java8;
 import java.util.function.BiConsumer;
 
 public class Introduction {
-    /**
+    /*
      * 1. Java 8 came into picture for conciseness of code
      * 2. Java 8 brought feature like functional programming along with Object Oriented Programming
      *    By introducing Lambda Expression

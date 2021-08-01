@@ -18,7 +18,7 @@ public class MergeTwoSortedArraysUsingTempVariable {
         int s1 = firstArray.length;
         int s2 = secondArray.length;
         int s = s1 + s2;
-        int resultantArray[] = new int[s];
+        int[] resultantArray = new int[s];
 
         int i = 0;
         int j = 0;

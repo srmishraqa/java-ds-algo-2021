@@ -22,7 +22,7 @@ public class DuplicateElements {
         System.out.println("###############");
         Set<String> set = new HashSet<String>();
         for (String names : arr) {
-            if (set.add(names) == false) {
+            if (!set.add(names)) {
                 System.out.println("Duplicate is : " + names);
             }
         }

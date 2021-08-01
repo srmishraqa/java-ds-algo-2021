@@ -24,7 +24,7 @@ public class ReturnMaximumCountOfCharInAString {
         TreeMap<Character, Integer> treeMap = new TreeMap<Character, Integer>();
 
         while (count != length) {
-            if (treeMap.containsKey(tempArr[count]) == false) {
+            if (!treeMap.containsKey(tempArr[count])) {
                 treeMap.put(tempArr[count], 1);
             } else {
                 int oldCount = treeMap.get(tempArr[count]);
