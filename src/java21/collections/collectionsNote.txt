@@ -1,0 +1,19 @@
+collection is a single entity which represents a group of Object
+
+Collection Framework : It defines classes and interfaces which can be used to
+represent a group of Object
+
+Array Does not belong to collections Framework
+
+Drawbacks of Array:
+1. We can store Homogenous data (same type of data) -> This can be overcame by creating object array
+2. Array will always have a limited fixed size -> while defining an array we need to declare the length
+3. Not Growable in nature - size can't be increased or decreased during run time
+4. While Implementing array java has not used any underlying data structure, there is no ready-made methods
+ (like there is no in-built sorting method)
+
+Collections Framework:
+Advantages:
+1. No Fixed size (growable in nature)
+2. Collections can hold Homogenous data as well as heterogenous data
+3. in-built ready made methods are available as it has an underlying data structure
