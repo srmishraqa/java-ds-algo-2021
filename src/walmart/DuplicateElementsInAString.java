@@ -3,6 +3,7 @@ package walmart;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class DuplicateElementsInAString {
     public static void main(String[] args) {
@@ -56,6 +57,7 @@ public class DuplicateElementsInAString {
             }
         }
         System.out.println(map);
+        //Set<Map.Entry<Character, Integer>> entries = map.entrySet();
         for(Map.Entry<Character,Integer> entry:map.entrySet()){
             if(entry.getValue()==1){
                 System.out.println(entry.getKey());
