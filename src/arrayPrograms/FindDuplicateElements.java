@@ -30,7 +30,7 @@ public class FindDuplicateElements {
     public static void PrintDuplicateElementsUsingSet(int[] arr) {
         Set<Integer> set = new HashSet<Integer>();
         for (int no : arr) {
-            if (set.add(no) == false) {
+            if (!set.add(no)) {
                 System.out.println(no);
             }
         }
