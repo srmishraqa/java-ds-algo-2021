@@ -1,4 +1,4 @@
-package java21.dsnalg.oops;
+package java21.dsnalg.object;
 
 public class Earth {
     public static void main(String[] args) {
@@ -21,8 +21,8 @@ public class Earth {
 
         // jo.speak();
 
-        Human human1 = new Human("Thomas",18,72,"blue");
-        Human human2 = new Human("Joseph",21,68,"green");
+        Human human1 = new Human("Thomas", 18, 72, "blue");
+        Human human2 = new Human("Joseph", 21, 68, "green");
 
         human1.speak();
         human2.speak();

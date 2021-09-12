@@ -1,4 +1,4 @@
-package java21.dsnalg.oops;
+package java21.dsnalg.object;
 
 public class Zoo {
     public static void main(String[] args) {

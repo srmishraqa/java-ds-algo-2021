@@ -1,4 +1,4 @@
-package java21.dsnalg.oops;
+package java21.dsnalg.object;
 
 public class Animal {
 
@@ -21,7 +21,7 @@ public class Animal {
         System.out.println("age: " + age);
     }
 
-    public void run(){
+    public void run() {
         System.out.println("running .......");
     }
 }
