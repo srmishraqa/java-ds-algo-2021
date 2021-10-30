@@ -8,4 +8,9 @@ public interface SampleInterface {
     static public void staticMethod(){
         System.out.println("static method in an interface");
     }
+
+    public static void main(String[] args) {
+        staticMethod();
+
+    }
 }

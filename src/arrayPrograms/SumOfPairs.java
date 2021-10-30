@@ -7,8 +7,20 @@ public class SumOfPairs {
     public static void main(String args[]) {
         int[] numbers = {7, 2, 4, 3, 5, 8, 9, 5, -2, 2, -7, 14};
         // printPairs(numbers, 7);
-        printSumOfPairs(numbers, 7);
+       // printSumOfPairs(numbers, 7);
+        sumOfTwo(numbers,7);
 
+    }
+
+    public static <a> void sumOfTwo(int[] array1, int a) {
+        int length = array1.length;
+        for (int i = 0; i < length - 1; i++) {
+            for (int j = 0; j < length; j++) {
+                if (array1[i] + array1[j] == a) {
+                    System.out.println(array1[i] + "," + array1[j]);
+                }
+            }
+        }
     }
 
     public static void printSumOfPairs(int arr[], int sum) {

@@ -41,8 +41,6 @@ public class ReturnHighestNumberWIthMatchingHighestFrequency {
             if (entry.getKey() == entry.getValue()) {
                 output = entry.getKey();
                 break;
-            } else {
-                output = 0;
             }
         }
         return output;

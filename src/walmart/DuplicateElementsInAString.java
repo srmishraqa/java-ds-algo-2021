@@ -1,16 +1,14 @@
 package walmart;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class DuplicateElementsInAString {
     public static void main(String[] args) {
         String str = "badsahas";
         //method1(str);
-        method2(str);
-        method3(str);
+//        method2(str);
+//        method3(str);
+        test(str);
     }
 
     // Not Optimized
@@ -65,6 +63,15 @@ public class DuplicateElementsInAString {
             }
         }
 
+    }
+
+    public static void test(String str){
+        Set<Character> set = new HashSet<>();
+        for(int i=0;i<str.length();i++){
+            if(!set.add(str.charAt(i))){
+                System.out.println(str.charAt(i));
+            }
+        }
     }
 
 }

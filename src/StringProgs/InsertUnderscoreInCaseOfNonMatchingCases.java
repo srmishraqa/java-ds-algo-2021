@@ -6,7 +6,8 @@ public class InsertUnderscoreInCaseOfNonMatchingCases {
     public static String driverMethod(String str) {
         String Output = "";
         for (int i = 0; i < str.length() - 1; i++) {
-            if ((Character.isLowerCase(str.charAt(i)) && Character.isUpperCase(str.charAt(i + 1))) || (Character.isUpperCase(str.charAt(i)) && Character.isLowerCase(str.charAt(i + 1)))
+            if ((Character.isLowerCase(str.charAt(i)) && Character.isUpperCase(str.charAt(i + 1)))
+                    || (Character.isUpperCase(str.charAt(i)) && Character.isLowerCase(str.charAt(i + 1)))
             ) {
                 Output = Output + str.charAt(i) + "_";
             } else {

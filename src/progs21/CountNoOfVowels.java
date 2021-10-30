@@ -5,8 +5,8 @@ public class CountNoOfVowels {
     public static int calculateNumberOfVowels(String input) {
         int vowelCount = 0;
         if (input.matches(".*[aeiou].*")) {
-            char[] charArray = input.toLowerCase().toCharArray();
-            for (char element : charArray) {
+
+            for (char element : input.toLowerCase().toCharArray()) {
                 if (element == 'a' || element == 'e' || element == 'i' || element == 'o' || element == 'u') {
                     vowelCount++;
                 }

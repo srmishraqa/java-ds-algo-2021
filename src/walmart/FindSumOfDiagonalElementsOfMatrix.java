@@ -1,5 +1,6 @@
 package walmart;
 
+import java.util.Collection;
 import java.util.Scanner;
 
 public class FindSumOfDiagonalElementsOfMatrix {
@@ -40,5 +41,6 @@ public class FindSumOfDiagonalElementsOfMatrix {
             }
         }
         System.out.println(sum);
+
     }
 }

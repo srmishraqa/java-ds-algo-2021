@@ -9,8 +9,6 @@ public class SumOfPairsThree {
     }
 
     static boolean find3Numbers(int A[], int arr_size, int sum) {
-        int l, r;
-
         // Fix the first element as A[i]
         for (int i = 0; i < arr_size - 2; i++) {
 

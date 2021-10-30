@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class NearestPrimeNo {
     public static boolean isPrime(int a) {
-        int c = 0;
+        boolean c = true;
         for (int i = 2; i < a / 2; i++) {
             if (a % i == 0) {
-                c = 1;
+                c = false;
                 break;
             }
         }
 
-        return c != 1;
+        return c;
 
 
     }

@@ -1,0 +1,48 @@
+Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(20))
+                .pollingEvery(Duration.ofSeconds(1))
+                .ignoring(NoSuchElementException.class);
+
+        WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+            @Override
+            public WebElement apply(WebDriver webDriver) {
+                return driver.findElement(By.name("q"));
+            }
+        });
+
+        select something which name starts with and ends with vowel
+
+        SELECT DISTINCT city
+        FROM   station
+        WHERE  city RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$'
+
+
+Garbage collection:
+
+Java applications obtain objects in memory as needed. It is the task of garbage collection (GC) in the Java virtual machine (JVM) to automatically determine what memory is no longer being used by a Java application and to recycle this memory for other uses.
+
+A minor or incremental garbage collection is said to have occurred when unreachable objects in the young generation heap memory are removed.
+
+A major or full garbage collection is said to have occurred when the objects that survived the minor garbage collection and copied into the old generation or permanent generation heap memory are removed. When compared to young generation, garbage collection happens less frequently in old
+generation.
+
+Final vs Finally vs Finalize:
+
+Final is a keyword.Final is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
+
+Finally is a block.Finally is used to place important code, it will be executed whether exception is handled or not.
+
+Finalize is a method. Finalize is used to perform clean up processing just before object is garbage collected.
+
+
+System.out.pritln():
+
+System: It is a final class defined in the java.lang package.
+out: This is an instance of PrintStream type, which is a public and static member field of the System class.
+println(): As all instances of PrintStream class have a public method println(), hence we can invoke the same on out as well. This is an upgraded version of print().
+It prints any argument passed to it and adds a new line to the output. We can assume that System.out represents the Standard Output Stream.
+
+Synchronized in collection:
+
+All collection classes (except Vector and Hashtable) in the java.util package are not thread-safe. The only two legacy collections are thread-safe: Vector and Hashtable. WHY? Here’s the reason: Synchronization can be very expensive! You know, Vector and Hashtable are the two collections exist early in Java history, and they are designed for thread-safe from the start (if you have chance to look at their source code, you will see their methods are all synchronized!). However, they quickly expose poor performance in multi-threaded programs. As you may know, synchronization requires locks which always take time to monitor, and that reduces the performance. That’s why the new collections (List, Set, Map, etc) provide no concurrency control at all to provide maximum performance in single-threaded applications.
+
