@@ -17,7 +17,9 @@ public class SortAnArrayUsingSingleForLoop {
     }
 
     public static void main(String[] args) {
-        int[] inputArray = { 90, 80, 70, 60, 50, 50, 40 };
+        //int[] inputArray = { 90, 80, 70, 60, 50, 50, 40 };
+        int[] inputArray = {-5, 1, -3, -2, 0, -4, 2, 3};
         System.out.println(Arrays.toString(driverMethod(inputArray)));
+
     }
 }
