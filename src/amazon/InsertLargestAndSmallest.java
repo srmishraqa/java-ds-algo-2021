@@ -49,14 +49,6 @@ public class InsertLargestAndSmallest {
                 j += 2;
 
             }
-        } else {
-            for (int i = 0; i < arr.length / 2; i++) {
-                output[j] = temp[arr.length - i - 1];
-                output[j + 1] = temp[i];
-                j += 2;
-            }
-            output[j] = temp[arr.length / 2];
-
         }
         return output;
     }
