@@ -9,7 +9,7 @@ import static java.util.Map.Entry.comparingByValue;
 
 public class SortAccordingToFrequency {
     public static void main(String[] args) {
-        int[] array = {5, 3, 4, 5, 8, 1, 1, 5};
+        int[] array = {5, 3, 4, 5, 8, 1, 1, 5, 3};
         System.out.println(sortAcToFrequency(array));
     }
 
@@ -26,7 +26,7 @@ public class SortAccordingToFrequency {
             i++;
         }
         // sort map by value;
-        linkedHashMap.entrySet().stream().sorted(Map.Entry.< Integer, Integer > comparingByValue().reversed()).forEach(record -> {
+        linkedHashMap.entrySet().stream().sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed()).forEach(record -> {
             int key = record.getKey();
             int value = record.getValue();
             for (int j = 0; j < value; j++) {

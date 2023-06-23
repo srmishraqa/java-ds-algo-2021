@@ -61,7 +61,7 @@ public class BalancedBracket {
 
     public static void main(String[] args) {
         System.out.println(areBracketsBalanced("[()]"));
-        //System.out.println(areBracketsBalanced("[(])"));
+        System.out.println(areBracketsBalanced("{([])}}"));
     }
 
 }

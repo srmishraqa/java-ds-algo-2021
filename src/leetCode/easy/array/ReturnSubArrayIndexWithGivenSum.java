@@ -1,7 +1,6 @@
 package leetCode.easy.array;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 /*
@@ -29,6 +28,8 @@ public class ReturnSubArrayIndexWithGivenSum {
         for (int i = 0; i < arr.length; i++) {
             currentSum += arr[i];
 
+            
+
             if (currentSum == sum) { // if it starts from index 0
                 start = 0;
                 end = i;
@@ -53,16 +54,8 @@ public class ReturnSubArrayIndexWithGivenSum {
 
     }
 
-    public static int sum(int[] arr, int index) {
-        int sum = 0;
-        for (int i = 0; i <= index; i++) {
-            sum = sum + arr[i];
-        }
-        return sum;
-    }
-
     public static void main(String[] args) {
-        int arr[] = {10, 2, -2, -20, 10};
-        test(arr, -10);
+        int arr[] = { 10, 2, -2, -20, 9 };
+        test(arr, 15);
     }
 }

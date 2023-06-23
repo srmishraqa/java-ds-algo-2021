@@ -49,7 +49,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] ar = {3, 2, 3,2};
-        System.out.println(Arrays.toString(twoSumOptimized(ar, 4)));
+        int[] ar = {3, 2, 4};
+        System.out.println(Arrays.toString(twoSumOptimized(ar, 6)));
     }
 }

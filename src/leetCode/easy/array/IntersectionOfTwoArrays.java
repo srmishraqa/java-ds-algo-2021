@@ -12,6 +12,7 @@ import java.util.*;
 *
 * */
 public class IntersectionOfTwoArrays {
+
     public static int[] union(int[] nums1, int[] nums2) {
         Set<Integer> set = new HashSet<>();
         int countTracker = 0;
@@ -25,8 +26,8 @@ public class IntersectionOfTwoArrays {
         int[] temp = new int[set.size()];
         for (int ele : set) {
             if (countTracker < set.size()) {
-                temp[countTracker] = ele;
-                countTracker++;
+                temp[countTracker++] = ele;
+
             }
         }
 
@@ -51,14 +52,14 @@ public class IntersectionOfTwoArrays {
             }
         }
 
-        System.out.println(set);
-        System.out.println(set2);
+        // System.out.println(set);
+        // System.out.println(set2);
         return Arrays.copyOf(temp, countTracker);
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 9, 5, 6, 11};
-        int[] arr2 = {9, 4, 9, 8, 4, 6, 10};
+        int[] arr = { 4, 9, 5, 6, 11 };
+        int[] arr2 = { 9, 4, 9, 8, 4, 6, 10 };
         System.out.println(Arrays.toString(union(arr, arr2)));
         System.out.println(Arrays.toString(intersection(arr, arr2)));
     }

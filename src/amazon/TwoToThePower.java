@@ -39,7 +39,7 @@ public class TwoToThePower {
     // Driver Code
     public static void main(String args[]) {
 
-        block(37);
+        block(36);
 
     }
 }

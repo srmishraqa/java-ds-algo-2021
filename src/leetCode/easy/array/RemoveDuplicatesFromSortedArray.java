@@ -27,8 +27,8 @@ public class RemoveDuplicatesFromSortedArray {
             nums[count] = nums[i];
             count++;
         }
-        System.out.println(Arrays.toString(nums));
-        return count;
+        System.out.println(Arrays.toString(Arrays.copyOf(nums,count))); // to return the unique array
+        return count; // to return the count
     }
 
     public static void main(String[] args) {

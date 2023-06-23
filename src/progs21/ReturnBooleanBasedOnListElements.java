@@ -27,7 +27,7 @@ public class ReturnBooleanBasedOnListElements {
     }
 
     public static boolean test(List<Integer> list) {
-        if ((list.contains(0) && list.contains(7)) != false) {
+        if ((list.contains(0) && list.contains(7))) {
             int ptr_a = list.indexOf(0);
             int ptr_b = 0;
             for (int i = ptr_a + 1; i < list.size(); i++) {
